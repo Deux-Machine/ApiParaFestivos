@@ -1,0 +1,17 @@
+
+<h1 mat-dialog-title>Login</h1>
+<div mat-dialog-content>
+    <mat-form-field appearance="fill">
+        <mat-label>Usuario</mat-label>
+        <input matInput [(ngModel)]="datos.usuario.usuario">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Clave</mat-label>
+        <input type="password" matInput [(ngModel)]="datos.usuario.clave">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="cancelar()">Cancelar</button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="datos" cdkFocusInitial>Aceptar</button>
+</div>

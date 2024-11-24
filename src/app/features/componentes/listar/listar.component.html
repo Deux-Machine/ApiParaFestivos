@@ -1,0 +1,8 @@
+<mat-form-field>
+    <mat-label>Año</mat-label>
+    <input  matInput [(ngModel)]="year">
+</mat-form-field>
+<button mat-stroked-button color="primary" (click)="listar()">Listar</button>
+
+<ngx-datatable class="dark" [rows]="festivos" [columns]="columnas">
+</ngx-datatable>
